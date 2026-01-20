@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title> Peta 4 </title>
+
+<link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+
+<div class="form-container">
+<div class="image-logo">
+
+<img class="logo" src="https://scontent.fmnl37-1.fna.fbcdn.net/v/t39.30808-6/480420854_28754327714181282_7917967090861395793_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeG0_Uq-OFOLOP9c4BVNfc2AOfBpTozdWl858GlOjN1aX7fJe0to61yTibwh7ChkMp1KdNDVA-lvMQYQPY-bZ9J0&_nc_ohc=f604mQswI5gQ7kNvwF-7BrO&_nc_oc=Adm-TDsaHpJhSbpCbFpN9AD6Vmz2SIvNtPuWJ6NN0kB0k5OYbYMn96c6Il8gWWLGY82_A1tmRzBSciyBkxfoicGh&_nc_zt=23&_nc_ht=scontent.fmnl37-1.fna&_nc_gid=cUciLSU_Ow4_YybTTSTq2Q&oh=00_AfpmEcB6Xa1HoRAE-NYxMiV-L2Yeg8ix_yJHb7gvwc0c6g&oe=6975739B">
+    <h1>Student Enrollment Forms</h1>
+
+</div>
+    <form action="https://script.google.com/macros/s/AKfycbwRIQG9NGLILjRXijussnSmRzsQJbmc8BlfngUoyLqv5ythZY1gZR3qlN8QRZoOv6BV/exec" method="post">
+        <h2>Student Information</h2>
+        <label>Student Name:</label>
+        <div class="row">
+          <input class="text" type="text" name = "StudentFirstName" placeholder="First Name" required>
+          <input class="text" type="text" name = "StudentLastName" placeholder="Last Name" required>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label>Birth Date:</label>
+            <input class="date" type="date" name = "StudentBirthdate" required>
+          </div>
+          <div class="col">
+            <label>Gender:</label>
+            <div class="gender">
+              <label><input type="radio" name="Studentgender" required> Male</label>
+              <label><input type="radio" name="Studentgender" required> Female</label>
+            </div>
+            </div>
+            </div>
+
+        <label>Student Address:</label>
+        <input class="text" type="text" name = "StudentAdress" placeholder="Full Address" required>
+
+        <div class="row">
+          <div class="col">
+            <label>Contact Number:</label>
+            <input class="tel" type="tel" name = "StudentNumber" placeholder="000 000-0000" required>
+          </div>
+          <div class="col">
+            <label>Email Address:</label>
+            <input class="email" type="email" name = "StudentEmail" placeholder="name@gmail.com" required>
+          </div>
+          </div>
+
+
+
+      
+        <h2>Parent/Guardian Information</h2>
+
+        <label>Parent/Guardian Name:</label>
+        <input class="text" type="text" name = "GuardianFullName" placeholder="Full Name" required>
+
+        <div class="row">
+          <div class="col">
+            <label>Relationship To Student:</label>
+            <input class="text" type="text" name = "GuardianRelation" placeholder="Example: Father/Mother" required>
+          </div>
+          <div class="col">
+            <label>Contact Number:</label>
+            <input class="tel" type="tel" name = "GuardianNumber" placeholder="000 000-0000" required>
+          </div>
+          <div class="col">
+            <label>Email Address:</label>
+            <input class="email" type="email" name = "GuardianEmail" placeholder="name@gmail.com" required >
+          </div>
+        </div>
+
+
+
+      
+        <h2>Academic Information</h2>
+
+        <div class="row">
+          <div class="col">
+            <label>Grade/Program Applying For:</label>
+            <input class="text" type="text" name = "StudentGradeProgram" placeholder="Example: Grade 10" required >
+          </div>
+          <div class="col">
+            <label>Previous School:</label>
+            <input class="text" type="text" name = "StudentLastSchool" placeholder="Full Name" required>
+          </div>
+        </div>
+
+
+      <button type="submit">Submit Form</button>
+    </form>
+  </div>
+</body>
+</html>

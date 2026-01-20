@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  width: 80%;
+  max-width: 800px;
+  margin: 25% ;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20%;
+}
+
+
+
+h2 {
+  color: darkblue;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+h1 {
+      color: darkblue;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  }
+  
+  .text {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 20px;
+  }
+  
+
+  
+  .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.col {
+  min-width: 200px;
+  flex: 1;
+  }
+  
+  
+  
+button:hover {
+  background-color: green;
+}
+
+  .email {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 20px;
+  }
+  
+    .tel {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 20px;
+  }
+  
+      .date {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 20px;
+  }
+  
+button {
+  margin-top: 25px;
+  padding: 25px;
+  background-color: darkblue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+.gender label {
+  font-weight: normal;
+  margin-right: 15px;
+  }
+  
+  
+  .image-logo {
+      text-align: center;
+  }
+  
+  .logo {
+      opacity: 1;
+      width: 80%;
+      height: 100px;
+  }
