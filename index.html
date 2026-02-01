@@ -1,99 +1,206 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <title> Peta 4 </title>
-
-<link rel="stylesheet" href="form.css">
-
+  <link rel="stylesheet" href="peta4.css">
 </head>
 <body>
 
 <div class="form-container">
 <div class="image-logo">
-
-<img class="logo" src="https://scontent.fmnl37-1.fna.fbcdn.net/v/t39.30808-6/480420854_28754327714181282_7917967090861395793_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeG0_Uq-OFOLOP9c4BVNfc2AOfBpTozdWl858GlOjN1aX7fJe0to61yTibwh7ChkMp1KdNDVA-lvMQYQPY-bZ9J0&_nc_ohc=f604mQswI5gQ7kNvwF-7BrO&_nc_oc=Adm-TDsaHpJhSbpCbFpN9AD6Vmz2SIvNtPuWJ6NN0kB0k5OYbYMn96c6Il8gWWLGY82_A1tmRzBSciyBkxfoicGh&_nc_zt=23&_nc_ht=scontent.fmnl37-1.fna&_nc_gid=cUciLSU_Ow4_YybTTSTq2Q&oh=00_AfpmEcB6Xa1HoRAE-NYxMiV-L2Yeg8ix_yJHb7gvwc0c6g&oe=6975739B">
+<center>
+<img class="logo" src="IMG_0608.jpg">
     <h1>Student Enrollment Forms</h1>
-
+</center>
 </div>
-    <form action="https://script.google.com/macros/s/AKfycbwRIQG9NGLILjRXijussnSmRzsQJbmc8BlfngUoyLqv5ythZY1gZR3qlN8QRZoOv6BV/exec" method="post">
+
+    <form action="https://script.google.com/macros/s/AKfycbya1EvkUt1ugwboZKRZqwk9wszs6tj4cUgXq8zGnY_uuWtSdr0pOIvxRTL8tPoT3sAE/exec" method="post">
+      
         <h2>Student Information</h2>
+
         <label>Student Name:</label>
         <div class="row">
-          <input class="text" type="text" name = "StudentFirstName" placeholder="First Name" required>
-          <input class="text" type="text" name = "StudentLastName" placeholder="Last Name" required>
+          <input class="text" type="text" name="StudentFirstName" placeholder="First Name" required>
+          <input class="text" type="text" name="StudentLastName" placeholder="Last Name" required>
         </div>
 
-        <div class="row">
-          <div class="col">
-            <label>Birth Date:</label>
-            <input class="date" type="date" name = "StudentBirthdate" required>
-          </div>
-          <div class="col">
-            <label>Gender:</label>
-            <div class="gender">
-              <label><input type="radio" name="Studentgender" required> Male</label>
-              <label><input type="radio" name="Studentgender" required> Female</label>
+        <div class="row"> 
+            <div class="col">
+                <label>Birth Date:</label>
+                <input class="date" type="text" name="StudentBirthdate" placeholder="(mm/dd/yyyy)" required>
             </div>
-            </div>
-            </div>
+            <div class="col"> 
+                <label>Gender: </label> 
+                <div class="gender"> 
+                    <label><input type="radio" name="Studentgender" value="Male"> Male</label>
+                    <label><input type="radio" name="Studentgender" value="Female"> Female</label>
+                </div> 
+            </div> 
+        </div>
+
 
         <label>Student Address:</label>
-        <input class="text" type="text" name = "StudentAdress" placeholder="Full Address" required>
+        <input class="text" type="text" name="StudentAdress" placeholder="Full Address" required>
 
         <div class="row">
           <div class="col">
             <label>Contact Number:</label>
-            <input class="tel" type="tel" name = "StudentNumber" placeholder="000 000-0000" required>
+            <input class="tel" type="tel" name="StudentNumber" placeholder="000 000-0000" required>
           </div>
           <div class="col">
-            <label>Email Address:</label>
-            <input class="email" type="email" name = "StudentEmail" placeholder="name@gmail.com" required>
-          </div>
-          </div>
-
-
+            <label>Email Address:</label >
+            <input class="email" type="email" placeholder="name@gmail.com" name="StudentEmail" required>
+          </div> 
+        </div>
 
       
         <h2>Parent/Guardian Information</h2>
 
         <label>Parent/Guardian Name:</label>
-        <input class="text" type="text" name = "GuardianFullName" placeholder="Full Name" required>
+        <input class="text" type="text" name="GuardianFullName" placeholder="Full Name" required>
 
         <div class="row">
           <div class="col">
             <label>Relationship To Student:</label>
-            <input class="text" type="text" name = "GuardianRelation" placeholder="Example: Father/Mother" required>
+            <input class="text" type="text" name="GuardianRelation" placeholder="Example: Father/Mother" required>
           </div>
           <div class="col">
             <label>Contact Number:</label>
-            <input class="tel" type="tel" name = "GuardianNumber" placeholder="000 000-0000" required>
+            <input class="tel" type="tel" name="GuardianNumber" placeholder="000 000-0000" required>
           </div>
           <div class="col">
             <label>Email Address:</label>
-            <input class="email" type="email" name = "GuardianEmail" placeholder="name@gmail.com" required >
+            <input class="email" type="email" name="GuardianEmail" placeholder="name@gmail.com" required >
           </div>
         </div>
 
-
-
       
-        <h2>Academic Information</h2>
+        <h2 class="h2">Academic Information</h2>
+        
+        <label>Top 3 Preferred Cluster/Strand </label>
+        <input class="text" type="text" name="Top3Strands" placeholder="Example: STEM, HUMSS, ASH" required>
 
+        <br>
+        
         <div class="row">
           <div class="col">
-            <label>Grade/Program Applying For:</label>
-            <input class="text" type="text" name = "StudentGradeProgram" placeholder="Example: Grade 10" required >
+            
+            <label for="Preferred Cluster">Preferred Academic Clusters</label>
+            <select id="grade" name="PreferredCluster">
+                <option value="" disabled selected>Select Academic Clusters</option>
+                <option value="ASSH">Arts, Social Sciences, and Humanities (ASSH)</option>
+                <option value="STEM">Science, Technology, Engineering, and Mathematics (STEM)</option>
+                <option value="BE">Business and Entrepreneurship (BE)</option>
+            </select>
+            
+          </div>
+          <div class="col">
+            
+            <label>Preferred TechPro Clusters:</label>
+            <select name="TechProCluster">
+              <option value="" disabled selected>Select TechPro Clusters</option>
+
+              <optgroup label=" Support and Computer Programming Technologies (ICT)">
+                <option>Computer Programming (Java) (NC IIl)</option>
+                <option>Programming (.Net Technology) (NC III)</option>
+                <option>Computer Systems Servicing (NC II)</option>
+                <option>Visual Graphic Design (NC III)</option>
+              </optgroup>
+              
+              <optgroup label=" Creative Arts and Design Technologies">
+                <option>Visual Graphic Design (NC IIl)</option>
+              </optgroup>
+              
+              <optgroup label="Hospitality and Tourism">
+                <option>Bakery Operation (NC II)</option>
+                <option>Events Management Services (NC IIl)</option>
+                <option>Food and Beverage Operation (NC Il)</option>
+                <option>Kitchen Operations (NC II)</option>
+              </optgroup>
+              
+              <optgroup label="Industrial Technologies">
+                <option>Electrical Installation Maintenance (NC II)</option>
+              </optgroup>
+
+              <optgroup label=" Construction and Building Technologies">
+                <option>Manual Metal Arc Welding</option>
+              </optgroup>
+
+            </select>
+        </div>
+        </div>
+        
+        <br>
+        
+        <div class="row">
+          <div class="col">
+            
+            <label for="StudentGradeProgram">Grade/Program Applying For:</label>
+            <select id="grade" name="StudentGradeProgram" required>
+                <option value="" disabled selected>Select Grade</option>
+                <option value="Grade 11">Grade 11</option>
+                <option value="Grade 12">Grade 12</option>
+            </select>
+            
           </div>
           <div class="col">
             <label>Previous School:</label>
-            <input class="text" type="text" name = "StudentLastSchool" placeholder="Full Name" required>
+            <input class="text" type="text" name="StudentLastSchool" placeholder="Full Name" required>
           </div>
         </div>
+      
+        <label>Learner References Number (LRN) </label>
+        <input class="text" type="tel" name="LRN" placeholder="LRN" maxlength="12" required>
 
 
-      <button type="submit">Submit Form</button>
-    </form>
-  </div>
+
+      <h2> Belonging to any Indigenous Peoples (IP) Community</h2>
+      <div class="row">
+          <div class="col">
+            <label><input class="radio" type="radio" name="IPStatus"  value="No" > No </label>
+            <label class="margin"><input class="radio" type="radio" name="IPStatus" value="Yes" >  Yes </label>
+             <label class="specify">  If Yes, please specify:<input class="input" name="IPSpecify" type="text"> </label> 
+        </div>
+      </div>
+
+
+
+     <div class="row">
+          <div class="col">
+            <h2> Is your family a beneficiary of 4Ps? </h2>
+            <label> <input type="radio" name="FourPsStatus" value="No"> No</label>
+            <label class="margin"><input type="radio" name="FourPsStatus" value="Yes">  Yes </label>
+            
+             <label id="specify">  <h2>If Yes, write the 4Ps Household ID Number: </h2>  <input class="input" name="FourPsID" type="text">  </label>
+        </div>
+    </div>
+
+
+      <h2> Is the child a learner with Disability</h2>
+      
+     <div class="row">
+          <div class="col">
+            <label><input class="radio" type="radio" name="DisabilityStatus" value="No"> No </label>
+            <label><input class="radio" type="radio" name="DisabilityStatus" value="Yes">  Yes </label>
+             <label class="specify">  If Yes, please specify:<input class="input" name="DisabilitySpecify" type="text"> </label> 
+        </div>
+    </div>
+
+    <br>
+
+      <button onclick="showAlert()" id="submitBtn" type="submit">Submit Form</button>
+      
+      <p id="output"> </p>
+
+</form> 
+
+<script>
+function showAlert() {
+    alert("You've Submitted This Form!.");
+}
+</script>
+  
+</div>
+
 </body>
 </html>
