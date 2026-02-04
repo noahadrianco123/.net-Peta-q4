@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peta 4</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<div class="form-container">
+<div class="image-logo">
+<img class="logo" src="IMG_0607.jpg">
+    <h1>Student Enrollment Forms</h1>
+</div>
+
+    <form id="enrollmentForm">
+      
+        <h2>Student Information</h2>
+
+        <label>Student Name:</label>
+        <div class="row">
+          <input class="text" type="text" name="StudentFirstName" placeholder="First Name" required>
+          <input class="text" type="text" name="StudentLastName" placeholder="Last Name" required>
+        </div>
+
+        <div class="row"> 
+            <div class="col">
+                <label>Birth Date:</label>
+                <input class="date" type="text" name="StudentBirthdate" placeholder="(mm/dd/yyyy)" required>
+            </div>
+            <div class="col"> 
+                <label>Gender: </label> 
+                <div class="gender"> 
+                    <label><input type="radio" name="Studentgender" value="Male"> Male</label>
+                    <label><input type="radio" name="Studentgender" value="Female"> Female</label>
+                </div> 
+            </div> 
+        </div>
+
+
+        <label>Student Address:</label>
+        <input class="text" type="text" name="StudentAdress" placeholder="Full Address" required>
+
+        <div class="row">
+          <div class="col">
+            <label>Contact Number:</label>
+            <input class="tel" type="tel" name="StudentNumber" placeholder="000 000-0000" required>
+          </div>
+          <div class="col">
+            <label>Email Address:</label >
+            <input class="email" type="email" placeholder="name@gmail.com" name="StudentEmail" required>
+          </div> 
+        </div>
+
+      
+        <h2>Parent/Guardian Information</h2>
+
+        <label>Parent/Guardian Name:</label>
+        <input class="text" type="text" name="GuardianFullName" placeholder="Full Name" required>
+
+        <div class="row">
+          <div class="col">
+            <label>Relationship To Student:</label>
+            <input class="text" type="text" name="GuardianRelation" placeholder="Example: Father/Mother" required>
+          </div>
+          <div class="col">
+            <label>Contact Number:</label>
+            <input class="tel" type="tel" name="GuardianNumber" placeholder="000 000-0000" required>
+          </div>
+          <div class="col">
+            <label>Email Address:</label>
+            <input class="email" type="email" name="GuardianEmail" placeholder="name@gmail.com" required >
+          </div>
+        </div>
+
+      
+        <h2 class="h2">Academic Information</h2>
+        
+        <label>Top 3 Preferred Cluster/Strand </label>
+        <input class="text" type="text" name="Top3Strands" placeholder="Example: STEM, HUMSS, ASH" required>
+
+        <br>
+        
+        <div class="row">
+          <div class="col">
+            
+            <label for="Preferred Cluster">Preferred Academic Clusters</label>
+            <select id="grade" name="PreferredCluster">
+                <option value="" disabled selected>Select Academic Clusters</option>
+                <option value="ASSH">Arts, Social Sciences, and Humanities (ASSH)</option>
+                <option value="STEM">Science, Technology, Engineering, and Mathematics (STEM)</option>
+                <option value="BE">Business and Entrepreneurship (BE)</option>
+            </select>
+            
+          </div>
+          <div class="col">
+            
+            <label>Preferred TechPro Clusters:</label>
+            <select name="TechProCluster">
+              <option value="" disabled selected>Select TechPro Clusters</option>
+              <optgroup label=" Support and Computer Programming Technologies (ICT)">
+                <option>Computer Programming (Java) (NC IIl)</option>
+                <option>Programming (.Net Technology) (NC III)</option>
+                <option>Computer Systems Servicing (NC II)</option>
+                <option>Visual Graphic Design (NC III)</option>
+              </optgroup>
+              <optgroup label=" Creative Arts and Design Technologies">
+                <option>Visual Graphic Design (NC IIl)</option>
+              </optgroup>
+              <optgroup label="Hospitality and Tourism">
+                <option>Bakery Operation (NC II)</option>
+                <option>Events Management Services (NC IIl)</option>
+                <option>Food and Beverage Operation (NC Il)</option>
+                <option>Kitchen Operations (NC II)</option>
+              </optgroup>
+              <optgroup label="Industrial Technologies">
+                <option>Electrical Installation Maintenance (NC II)</option>
+              </optgroup>
+              <optgroup label=" Construction and Building Technologies">
+                <option>Manual Metal Arc Welding</option>
+              </optgroup>
+            </select>
+        </div>
+        </div>
+        
+        <div class="section-box">
+             <label>After grade 12, what is your most preferred curriculum exit?</label>
+             <div class="radio-group-vertical">
+                <label><input type="radio" name="CurriculumExit" value="Higher Education"> Higher Education (college/university)</label>
+                <label><input type="radio" name="CurriculumExit" value="Entrepreneurship"> Entrepreneurship (starting a business)</label>
+                <label><input type="radio" name="CurriculumExit" value="Employment"> Employment (job, workforce)</label>
+                <label><input type="radio" name="CurriculumExit" value="Middle-level skills"> Middle-level skills development (tech-voc)</label>
+             </div>
+             
+             <label>Remarks:</label>
+             <input class="text" type="text" name="Remarks" placeholder="Any remarks...">
+
+             <br><br>
+
+             <label>Track Specification:</label>
+             <div class="radio-group-vertical">
+                <label><input type="radio" name="TrackType" value="PURE ACADEMIC"> PURE ACADEMIC TRACK</label>
+                <label><input type="radio" name="TrackType" value="ACADEMIC WITH DOORWAY"> ACADEMIC TRACK WITH DOORWAY</label>
+                <label><input type="radio" name="TrackType" value="PURE TECHPRO"> PURE TECHPRO TRACK</label>
+                <label><input type="radio" name="TrackType" value="TECHPRO WITH DOORWAY"> TECHPRO TRACK WITH DOORWAY</label>
+             </div>
+        </div>
+        <br>
+        
+        <div class="row">
+          <div class="col">
+            <label for="StudentGradeProgram">Grade/Program Applying For:</label>
+            <select id="grade" name="StudentGradeProgram" required>
+                <option value="" disabled selected>Select Grade</option>
+                <option value="Grade 11">Grade 11</option>
+                <option value="Grade 12">Grade 12</option>
+            </select>
+          </div>
+          <div class="col">
+            <label>Previous School:</label>
+            <input class="text" type="text" name="StudentLastSchool" placeholder="Full Name" required>
+          </div>
+        </div>
+      
+        <label>Learner References Number (LRN) </label>
+        <input class="text" type="tel" name="LRN" placeholder="LRN" maxlength="12" required>
+
+      <h2> Belonging to any Indigenous Peoples (IP) Community</h2>
+      <div class="row">
+          <div class="col">
+            <label><input class="radio" type="radio" name="IPStatus"  value="No" > No </label>
+            <label class="margin"><input class="radio" type="radio" name="IPStatus" value="Yes" >  Yes </label>
+             <label class="specify">  If Yes, please specify:<input class="input" name="IPSpecify" type="text"> </label> 
+        </div>
+      </div>
+
+     <div class="row">
+          <div class="col">
+            <h2> Is your family a beneficiary of 4Ps? </h2>
+            <label> <input type="radio" name="FourPsStatus" value="No"> No</label>
+            <label class="margin"><input type="radio" name="FourPsStatus" value="Yes">  Yes </label>
+            
+             <label id="specify">  <h2>If Yes, write the 4Ps Household ID Number: </h2>  <input class="input" name="FourPsID" type="text">  </label>
+        </div>
+    </div>
+
+      <h2> Is the child a learner with Disability</h2>
+      
+     <div class="row">
+          <div class="col">
+            <label><input class="radio" type="radio" name="DisabilityStatus" value="No"> No </label>
+            <label><input class="radio" type="radio" name="DisabilityStatus" value="Yes">  Yes </label>
+             <label class="specify">  If Yes, please specify:<input class="input" name="DisabilitySpecify" type="text"> </label> 
+        </div>
+    </div>
+
+    <br>
+
+      <button id="submitBtn" type="submit">Submit Form</button>
+      
+</form> 
+
+
+</div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbya1EvkUt1ugwboZKRZqwk9wszs6tj4cUgXq8zGnY_uuWtSdr0pOIvxRTL8tPoT3sAE/exec';
+  const form = document.getElementById('enrollmentForm');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault(); 
+    
+    const btn = document.getElementById('submitBtn');
+    const originalText = btn.innerText;
+    btn.innerText = "Submitting...";
+    btn.disabled = true;
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          alert("Success! Your enrollment form has been submitted.");
+          window.location.href = "index.html"; 
+      })
+      .catch(error => {
+          alert('Error!', error.message);
+          btn.innerText = originalText;
+          btn.disabled = false;
+      });
+  });
+</script>
+
+</body>
+</html>
