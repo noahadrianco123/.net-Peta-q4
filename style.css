@@ -10,31 +10,42 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    background-color: #0A2540;
+    background-color: #0A2540; 
     overflow-x: hidden;
 }
 
-.bg-layer {
+
+.slideshow-container {
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
+    background-color: #0A2540; 
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    animation: changeBG 20s infinite ease-in-out;
+    opacity: 0;
+    animation: fadeAnimation 15s infinite;
 }
 
-@keyframes changeBG {
-    0%, 100% { background-image: url('Bgimg1.jpg'); }
-    33% { background-image: url('Bgimg2.jpg'); }
-    66% { background-image: url('Bgimg3.jpg'); }
+.slide1 { background-image: url('Bgimg1.jpg'); animation-delay: 0s; }
+.slide2 { background-image: url('Bgimg2.jpg'); animation-delay: 5s; }
+.slide3 { background-image: url('Bgimg3.jpg'); animation-delay: 10s; }
+
+@keyframes fadeAnimation {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    33% { opacity: 1; }
+    43% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
 .header {
@@ -42,18 +53,17 @@ body {
     align-items: center;
     justify-content: space-between;
     background: black;
-    padding: 15px 5%;
+    padding: 10px 5%;
     gap: 10px;
-    position: relative;
 }
 
 .abadlogo {
-    height: clamp(50px, 8vw, 80px);
+    height: clamp(50px, 10vw, 80px);
     width: auto;
 }
 
 .depedlogo {
-    height: clamp(40px, 6vw, 65px);
+    height: clamp(40px, 8vw, 65px);
     width: auto;
 }
 
@@ -63,7 +73,7 @@ body {
 }
 
 .header h1 {
-    font-size: clamp(1rem, 4vw, 1.6rem);
+    font-size: clamp(1rem, 4vw, 1.5rem);
 }
 
 .subtext {
@@ -76,14 +86,12 @@ body {
     width: 100%;
     padding: 15px 0;
     border-bottom: 2px solid #ffd700;
-    position: relative;
 }
 
 .nav-container nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .nav-container a {
@@ -99,12 +107,10 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    position: relative;
 }
 
-
 .hero {
-    background: rgba(10, 37, 64, 0.8);
+    background: rgba(10, 37, 64, 0.8); 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: clamp(25px, 8vw, 50px);
@@ -112,7 +118,7 @@ body {
     text-align: center;
     width: 100%;
     max-width: 800px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .hero h2 {
@@ -129,7 +135,6 @@ button {
     cursor: pointer;
     background: white;
     color: #0A2540;
-    font-size: 1rem;
 }
 
 .footer {
@@ -138,5 +143,4 @@ button {
     padding: 20px;
     margin-top: auto;
     font-size: 0.8rem;
-    position: relative;
 }
