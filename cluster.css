@@ -43,9 +43,9 @@ h3 {
 }
 
 .cluster:hover {
-  transform: scale(1.03); /* Grows 3% larger */
-  background: rgba(255, 255, 255, 0.15); /* Gets brighter */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Adds shadow depth */
+  transform: scale(1.03); 
+  background: rgba(255, 255, 255, 0.15); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   border-color: #ffd700;
 }
 
@@ -108,5 +108,5 @@ li {
   body { padding: 10px; }
   h2 { font-size: 1.5rem; }
   .cluster { padding: 15px; }
-  .cluster:hover { transform: scale(1.01); /* Less scaling on phone */ }
+  .cluster:hover { transform: scale(1.01);}
 }
